@@ -37,7 +37,7 @@ PGP/Sign.pm.
 perl Makefile.PL \
 	PGP=/usr/bin/gpg \
 	PGPSTYLE=GPG
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT

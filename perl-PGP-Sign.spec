@@ -24,11 +24,11 @@ Summary(uk):	Модуль для Perl PGP::Sign
 Summary(zh_CN):	PGP::Sign Perl дё©И
 Name:		perl-PGP-Sign
 Version:	0.17
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	gnupg
 Requires:	gnupg
@@ -54,6 +54,7 @@ PGP/Sign.pm.
 
 %build
 %{__perl} Makefile.PL \
+	INSTALLDIRS=vendor  \
 	PGP=%{_bindir}/gpg \
 	PGPSTYLE=GPG
 %{__make}
@@ -70,5 +71,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README TODO
-%{perl_sitelib}/PGP
+%{perl_vendorlib}/PGP
 %{_mandir}/man3/*

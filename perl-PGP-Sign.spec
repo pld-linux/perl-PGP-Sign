@@ -24,7 +24,7 @@ Summary(uk):	Модуль для Perl PGP::Sign
 Summary(zh_CN):	PGP::Sign Perl дё©И
 Name:		perl-PGP-Sign
 Version:	0.17
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl

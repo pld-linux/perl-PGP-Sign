@@ -23,13 +23,14 @@ Summary(sv):	PGP::Sign Perlmodul
 Summary(uk):	Модуль для Perl PGP::Sign
 Summary(zh_CN):	PGP::Sign Perl дё©И
 Name:		perl-PGP-Sign
-Version:	0.18
+Version:	0.19
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5a7909360ee989cdfbbc02696be56424
+# Source0-md5:	d7a461db926dd3d826591562135926df
+URL:		http://search.cpan.org/dist/PGP-Sign/
 BuildRequires:	gnupg
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -59,7 +60,9 @@ PGP/Sign.pm.
 	INSTALLDIRS=vendor  \
 	PGP=%{_bindir}/gpg \
 	PGPSTYLE=GPG
+
 %{__make}
+
 %{?with_tests:%{__make} test}
 
 %install

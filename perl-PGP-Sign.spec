@@ -26,7 +26,7 @@ Name:		perl-PGP-Sign
 Version:	0.17
 Release:	2
 # same as perl
-License:	GPL v1 or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	caab81561eeae34735d20dc308ea6428

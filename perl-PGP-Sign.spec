@@ -3,8 +3,8 @@
 %bcond_without	tests # do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	PGP
-%define	pnam	Sign
+%define		pdir	PGP
+%define		pnam	Sign
 Summary:	PGP::Sign Perl module
 Summary(cs):	Modul PGP::Sign pro Perl
 Summary(da):	Perlmodul PGP::Sign

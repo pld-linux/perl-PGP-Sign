@@ -3,13 +3,13 @@ Summary:	PGP-Sign perl module
 Summary(pl):	Modu³ perla PGP-Sign
 Name:		perl-PGP-Sign
 Version:	0.16
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/PGP/PGP-Sign-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl >= 5.6
 BuildRequires:	gnupg
 %requires_eq	perl
 Requires:	%{perl_sitearch}
@@ -43,14 +43,7 @@ perl Makefile.PL \
 rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/PGP/Sign
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
-)
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        ChangeLog README TODO
+gzip -9nf ChangeLog README TODO
 
 %clean
 rm -rf $RPM_BUILD_ROOT

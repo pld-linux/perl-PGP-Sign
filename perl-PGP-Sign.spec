@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	PGP
 %define	pnam	Sign
-%include	/usr/lib/rpm/macros.perl
 Summary:	PGP-Sign perl module
 Summary(pl):	Modu³ perla PGP-Sign
 Name:		perl-PGP-Sign
 Version:	0.16
-Release:	6
-
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -32,7 +31,7 @@ z PGP, musisz zmodyfikowaæ sekcjê 'Global variables' w pliku
 PGP/Sign.pm.
 
 %prep
-%setup -q -n PGP-Sign-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL \

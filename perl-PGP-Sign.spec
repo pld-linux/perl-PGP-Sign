@@ -14,7 +14,7 @@ Summary(fr):	Module Perl PGP::Sign
 Summary(it):	Modulo di Perl PGP::Sign
 Summary(ja):	PGP::Sign Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	PGP::Sign ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul PGP::Sign
+Summary(nb):	Perlmodul PGP::Sign
 Summary(pl):	Modu³ Perla PGP::Sign
 Summary(pt):	Módulo de Perl PGP::Sign
 Summary(pt_BR):	Módulo Perl PGP::Sign

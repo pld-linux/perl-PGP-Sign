@@ -1,11 +1,26 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	PGP
-%define	pnam	Sign
-Summary:	PGP::Sign perl module
-Summary(pl):	Modu³ perla PGP::Sign
+%define		pdir	PGP
+%define		pnam	Sign
+Summary:	PGP::Sign Perl module
+Summary(cs):	Modul PGP::Sign pro Perl
+Summary(da):	Perlmodul PGP::Sign
+Summary(de):	PGP::Sign Perl Modul
+Summary(es):	Módulo de Perl PGP::Sign
+Summary(fr):	Module Perl PGP::Sign
+Summary(it):	Modulo di Perl PGP::Sign
+Summary(ja):	PGP::Sign Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	PGP::Sign ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul PGP::Sign
+Summary(pl):	Modu³ Perla PGP::Sign
+Summary(pt):	Módulo de Perl PGP::Sign
+Summary(pt_BR):	Módulo Perl PGP::Sign
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl PGP::Sign
+Summary(sv):	PGP::Sign Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl PGP::Sign
+Summary(zh_CN):	PGP::Sign Perl Ä£¿é
 Name:		perl-PGP-Sign
 Version:	0.16
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -44,13 +59,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf ChangeLog README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
-%{perl_sitelib}/PGP/Sign.pm
+%doc ChangeLog README TODO
+%{perl_sitelib}/PGP
 %{_mandir}/man3/*

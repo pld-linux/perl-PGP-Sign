@@ -3,7 +3,7 @@ Summary:	PGP-Sign perl module
 Summary(pl):	Modu³ perla PGP-Sign
 Name:		perl-PGP-Sign
 Version:	0.16
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -13,6 +13,7 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	gnupg
 Requires:	gnupg
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

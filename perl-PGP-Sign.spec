@@ -1,3 +1,7 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	PGP
 %define		pnam	Sign
@@ -19,8 +23,8 @@ Summary(sv):	PGP::Sign Perlmodul
 Summary(uk):	Модуль для Perl PGP::Sign
 Summary(zh_CN):	PGP::Sign Perl дё©И
 Name:		perl-PGP-Sign
-Version:	0.16
-Release:	8
+Version:	0.17
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -53,6 +57,7 @@ perl Makefile.PL \
 	PGP=%{_bindir}/gpg \
 	PGPSTYLE=GPG
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT

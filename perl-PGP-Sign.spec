@@ -53,7 +53,7 @@ PGP/Sign.pm.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL \
+%{__perl} Makefile.PL \
 	PGP=%{_bindir}/gpg \
 	PGPSTYLE=GPG
 %{__make}

@@ -1,0 +1,2 @@
+- spec adapterized,
+- do not include .packlist file in %%files.

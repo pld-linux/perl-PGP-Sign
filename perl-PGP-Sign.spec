@@ -1,9 +1,12 @@
+%define	pdir	PGP
+%define	pnam	Sign
 %include	/usr/lib/rpm/macros.perl
 Summary:	PGP-Sign perl module
 Summary(pl):	Modu³ perla PGP-Sign
 Name:		perl-PGP-Sign
 Version:	0.16
-Release:	5
+Release:	6
+
 License:	GPL
 Group:		Development/Languages/Perl
 Group(cs):	Vývojové prostøedky/Programovací jazyky/Perl
@@ -20,7 +23,7 @@ Group(pt):	Desenvolvimento/Linguagens/Perl
 Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
 Group(sl):	Razvoj/Jeziki/Perl
 Group(sv):	Utveckling/Språk/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/PGP/PGP-Sign-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	gnupg

@@ -14,7 +14,7 @@ BuildRequires:	gnupg
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 Requires:	gnupg
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 PGP-Sign - generates detached PGP signatures for data.

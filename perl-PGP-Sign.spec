@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	PGP
 %define	pnam	Sign
-Summary:	PGP-Sign perl module
-Summary(pl):	Modu³ perla PGP-Sign
+Summary:	PGP::Sign perl module
+Summary(pl):	Modu³ perla PGP::Sign
 Name:		perl-PGP-Sign
 Version:	0.16
 Release:	7
@@ -17,14 +17,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-PGP-Sign - generates detached PGP signatures for data.
+PGP::Sign - generates detached PGP signatures for data.
 
 This package was built for using with GnuPG. If you want to use it
 with PGP, you need to modify 'Global variables' section in the
 PGP/Sign.pm file.
 
 %description -l pl
-PGP-Sign - generuje oddzielne sygnatury PGP dla danych.
+PGP::Sign - generuje oddzielne sygnatury PGP dla danych.
 
 Ten pakiet zosta³ zbudowany do u¿ycia z GnuPG. Je¶li chcesz u¿ywaæ go
 z PGP, musisz zmodyfikowaæ sekcjê 'Global variables' w pliku

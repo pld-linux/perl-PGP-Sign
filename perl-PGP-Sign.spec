@@ -6,22 +6,22 @@
 %define		pdir	PGP
 %define		pnam	Sign
 Summary:	PGP::Sign Perl module
-Summary(cs):	Modul PGP::Sign pro Perl
-Summary(da):	Perlmodul PGP::Sign
-Summary(de):	PGP::Sign Perl Modul
-Summary(es):	MÛdulo de Perl PGP::Sign
-Summary(fr):	Module Perl PGP::Sign
-Summary(it):	Modulo di Perl PGP::Sign
-Summary(ja):	PGP::Sign Perl •‚•∏•Â°º•Î
-Summary(ko):	PGP::Sign ∆ﬁ ∏¡Ÿ
-Summary(nb):	Perlmodul PGP::Sign
-Summary(pl):	Modu≥ Perla PGP::Sign
-Summary(pt):	MÛdulo de Perl PGP::Sign
-Summary(pt_BR):	MÛdulo Perl PGP::Sign
-Summary(ru):	Ìœƒ’Ãÿ ƒÃ— Perl PGP::Sign
-Summary(sv):	PGP::Sign Perlmodul
-Summary(uk):	Ìœƒ’Ãÿ ƒÃ— Perl PGP::Sign
-Summary(zh_CN):	PGP::Sign Perl ƒ£øÈ
+Summary(cs.UTF-8):   Modul PGP::Sign pro Perl
+Summary(da.UTF-8):   Perlmodul PGP::Sign
+Summary(de.UTF-8):   PGP::Sign Perl Modul
+Summary(es.UTF-8):   M√≥dulo de Perl PGP::Sign
+Summary(fr.UTF-8):   Module Perl PGP::Sign
+Summary(it.UTF-8):   Modulo di Perl PGP::Sign
+Summary(ja.UTF-8):   PGP::Sign Perl „É¢„Ç∏„É•„Éº„É´
+Summary(ko.UTF-8):   PGP::Sign ÌéÑ Î™®Ï§Ñ
+Summary(nb.UTF-8):   Perlmodul PGP::Sign
+Summary(pl.UTF-8):   Modu≈Ç Perla PGP::Sign
+Summary(pt.UTF-8):   M√≥dulo de Perl PGP::Sign
+Summary(pt_BR.UTF-8):   M√≥dulo Perl PGP::Sign
+Summary(ru.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl PGP::Sign
+Summary(sv.UTF-8):   PGP::Sign Perlmodul
+Summary(uk.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl PGP::Sign
+Summary(zh_CN.UTF-8):   PGP::Sign Perl Ê®°Âùó
 Name:		perl-PGP-Sign
 Version:	0.19
 Release:	1
@@ -45,11 +45,11 @@ This package was built for using with GnuPG. If you want to use it
 with PGP, you need to modify 'Global variables' section in the
 PGP/Sign.pm file.
 
-%description -l pl
+%description -l pl.UTF-8
 PGP::Sign - generuje oddzielne sygnatury PGP dla danych.
 
-Ten pakiet zosta≥ zbudowany do uøycia z GnuPG. Je∂li chcesz uøywaÊ go
-z PGP, musisz zmodyfikowaÊ sekcjÍ 'Global variables' w pliku
+Ten pakiet zosta≈Ç zbudowany do u≈ºycia z GnuPG. Je≈õli chcesz u≈ºywaƒá go
+z PGP, musisz zmodyfikowaƒá sekcjƒô 'Global variables' w pliku
 PGP/Sign.pm.
 
 %prep

@@ -6,22 +6,22 @@
 %define		pdir	PGP
 %define		pnam	Sign
 Summary:	PGP::Sign Perl module
-Summary(cs.UTF-8):   Modul PGP::Sign pro Perl
-Summary(da.UTF-8):   Perlmodul PGP::Sign
-Summary(de.UTF-8):   PGP::Sign Perl Modul
-Summary(es.UTF-8):   Módulo de Perl PGP::Sign
-Summary(fr.UTF-8):   Module Perl PGP::Sign
-Summary(it.UTF-8):   Modulo di Perl PGP::Sign
-Summary(ja.UTF-8):   PGP::Sign Perl モジュール
-Summary(ko.UTF-8):   PGP::Sign 펄 모줄
-Summary(nb.UTF-8):   Perlmodul PGP::Sign
-Summary(pl.UTF-8):   Moduł Perla PGP::Sign
-Summary(pt.UTF-8):   Módulo de Perl PGP::Sign
-Summary(pt_BR.UTF-8):   Módulo Perl PGP::Sign
-Summary(ru.UTF-8):   Модуль для Perl PGP::Sign
-Summary(sv.UTF-8):   PGP::Sign Perlmodul
-Summary(uk.UTF-8):   Модуль для Perl PGP::Sign
-Summary(zh_CN.UTF-8):   PGP::Sign Perl 模块
+Summary(cs.UTF-8):	Modul PGP::Sign pro Perl
+Summary(da.UTF-8):	Perlmodul PGP::Sign
+Summary(de.UTF-8):	PGP::Sign Perl Modul
+Summary(es.UTF-8):	Módulo de Perl PGP::Sign
+Summary(fr.UTF-8):	Module Perl PGP::Sign
+Summary(it.UTF-8):	Modulo di Perl PGP::Sign
+Summary(ja.UTF-8):	PGP::Sign Perl モジュール
+Summary(ko.UTF-8):	PGP::Sign 펄 모줄
+Summary(nb.UTF-8):	Perlmodul PGP::Sign
+Summary(pl.UTF-8):	Moduł Perla PGP::Sign
+Summary(pt.UTF-8):	Módulo de Perl PGP::Sign
+Summary(pt_BR.UTF-8):	Módulo Perl PGP::Sign
+Summary(ru.UTF-8):	Модуль для Perl PGP::Sign
+Summary(sv.UTF-8):	PGP::Sign Perlmodul
+Summary(uk.UTF-8):	Модуль для Perl PGP::Sign
+Summary(zh_CN.UTF-8):	PGP::Sign Perl 模块
 Name:		perl-PGP-Sign
 Version:	0.19
 Release:	1

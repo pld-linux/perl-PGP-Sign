@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests # do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	PGP
 %define		pnam	Sign
 Summary:	PGP::Sign Perl module

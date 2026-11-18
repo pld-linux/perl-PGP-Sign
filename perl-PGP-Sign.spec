@@ -22,17 +22,21 @@ Summary(sv.UTF-8):	PGP::Sign Perlmodul
 Summary(uk.UTF-8):	Модуль для Perl PGP::Sign
 Summary(zh_CN.UTF-8):	PGP::Sign Perl 模块
 Name:		perl-PGP-Sign
-Version:	0.20
-Release:	2
+Version:	1.04
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a4b25e00c3d30651d859e29b2995b7b9
-URL:		http://search.cpan.org/dist/PGP-Sign/
+Source0:	https://www.cpan.org/authors/id/R/RR/RRA/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	94427ecdc22d2137654318331622d0bc
+URL:		https://metacpan.org/dist/PGP-Sign
 BuildRequires:	gnupg
-BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	perl-Module-Build >= 0.28
+BuildRequires:	perl-devel >= 1:5.20
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-IPC-Run
+%endif
 Requires:	gnupg
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -40,41 +44,34 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 PGP::Sign - generates detached PGP signatures for data.
 
-This package was built for using with GnuPG. If you want to use it
-with PGP, you need to modify 'Global variables' section in the
-PGP/Sign.pm file.
+This module works with GnuPG only.
 
 %description -l pl.UTF-8
 PGP::Sign - generuje oddzielne sygnatury PGP dla danych.
 
-Ten pakiet został zbudowany do użycia z GnuPG. Jeśli chcesz używać go
-z PGP, musisz zmodyfikować sekcję 'Global variables' w pliku
-PGP/Sign.pm.
+Ten moduł działa wyłącznie z GnuPG.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL \
-	INSTALLDIRS=vendor  \
-	PGP=%{_bindir}/gpg \
-	PGPSTYLE=GPG
+%{__perl} Build.PL \
+	--installdirs=vendor \
+	--destdir=$RPM_BUILD_ROOT
+./Build
 
-%{__make}
-
-%{?with_tests:%{__make} test}
+%{?with_tests:./Build test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+./Build install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README TODO
+%doc Changes README TODO
 %{perl_vendorlib}/PGP
 %{_mandir}/man3/*
